@@ -1,0 +1,6 @@
+{
+      "isBaseRuleset": true,
+      //"techsToRemove": ["Guilds", "Architecture", "Industrialization", "Ballistics", "Combined Arms", "Mobile Tactics"],
+      //"unitsToRemove": ["Galleass", "Great War Infantry", "Triplane", "Great War Bomber", "Landship", "Gatling Gun", "Machine Gun"],
+      //"buildingsToRemove": ["Alhambra", "Terracotta Army", "Neuschwanstein", "Hubble Space Telescope", "Leaning Tower of Pisa", "Hanse"]
+}
