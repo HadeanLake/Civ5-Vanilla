@@ -9,6 +9,12 @@ This mod designed to bring Unciv as close as possible to vanilla Civilization 5.
 * Enabled buildings: Arsenal, Military base
 * Removed G&K techs: Guilds, Architecture, Industrialization, Ballistics, Combined Arms, Mobile Tactics
 * Added techs that were removed in G&K: Telegraph, and other missing techs: Mass Media, Globalization, Stealth, Advanced Ballistics, Nuclear Fusion
+* Currently in Unciv tile can provide only 2 strategic resource per tile instead of 4, 4, 7, 6, 7, 8 for uran, horse, oil, iron, coal, alum (if it is a major deposit) 
+To compensate this "Double quantity of [] produced" uniques were added to palace:
+doubled Horses, Iron, Oil and Uranium for all civs
+quadrupled Aluminum and Coal for all civs
+
+
 
 # Credits
 
