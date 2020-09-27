@@ -1161,7 +1161,6 @@
 		// Single-use like missile
 		// No strength/rangedStrength tags in civ 5 xmls. Instead has NukeDamageLevel = 1 tag (Nuclear Missile has NukeDamageLevel = 2)
 	},
-	*/
 	{
 		"name": "Guided Missile",
 		"unitType": "Missile",
@@ -1174,6 +1173,7 @@
 		// don't cost Maintenance, but count towards the limit of air units in city
 		// requiredTech "Advanced ballistics" in expansions
 	},
+	*/
 	{
 		"name": "Nuclear Missile",
 		"unitType": "Missile",

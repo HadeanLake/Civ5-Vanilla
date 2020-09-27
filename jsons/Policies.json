@@ -108,8 +108,8 @@
 		"policies": [
 			{
 				"name": "Warrior Code",
-				"effect": "+20% production when training melee units",
-				"uniques":["+[20]% Production when constructing [melee units]"],
+				"effect": "+15% production when training melee units and a Great General appears outside the Capital",
+				"uniques":["+[15]% Production when constructing [melee units]","Free [Great General] appears"],
 				"row": 1,
 				"column": 2
 			},
@@ -119,6 +119,7 @@
 				"uniques":["+15% combat strength for melee units which have another military unit in an adjacent tile"],
 				"row": 1,
 				"column": 4
+				//should be 10%
 			},
 			{
 				"name": "Military Tradition",
@@ -138,8 +139,9 @@
 			},
 			{
 				"name": "Professional Army",
-				"effect": "Gold cost of upgrading military units reduced by 33%",
-				"uniques": ["Gold cost of upgrading military units reduced by 33%"],
+				"effect": "Gold cost of upgrading military units reduced by 33%. +1 Happiness from every defensive building (Walls, Castle, Arsenal, Military Base).",
+				"uniques": ["Gold cost of upgrading military units reduced by 33%", "[+1 Happiness] from every [Walls]"
+					"[+1 Happiness] from every [Castle]", "[+1 Happiness] from every [Arsenal]", "[+1 Happiness] from every [Military Base]"],
 				"requires": ["Military Caste"],
 				"row": 3,
 				"column": 4
@@ -155,6 +157,7 @@
 		"era": "Classical era",
 		"effect": "Building time of culture buildings reduced by 15%",
 		"uniques": ["+[15]% Production when constructing [Culture] buildings"],
+		// This branch cannot be active at the same time as Rationalism.
 		"policies": [
 			{
 				"name": "Organized Religion",
@@ -254,15 +257,17 @@
 		"policies": [
 			{
 				"name": "Trade Unions",
-				"effect": "Maintenance on roads & railroads reduced by 33%, +2 gold from all trade routes",
-				"uniques": ["Maintenance on roads & railroads reduced by 33%", "[+2 Gold] from each Trade Route"],
+				"effect": "Maintenance on roads & railroads reduced by 33%. Harbors and Seaports gain +1 Gold.",
+				"uniques": ["Maintenance on roads & railroads reduced by 33%", "[+1 Gold] from every [Harbor]", "[+1 Gold] from every [Seaport]"],
 				"row": 1,
 				"column": 2
 			},
+			// Naval Tradition - +1 moves Movement for Naval units and +1 Sight for Naval combat units.
 			{
 				"name": "Mercantilism",
 				"effect": "-25% to purchasing items in cities",
 				"uniques": ["Cost of purchasing items in cities reduced by [25]%"],
+				//"requires": ["Trade Unions"],
 				"row": 1,
 				"column": 5
 			},
@@ -274,7 +279,9 @@
 				"requires": ["Trade Unions"],
 				"row": 2,
 				"column": 2
+				// not in vanilla
 			},
+			// Merchant Navy - +3 Production in all coastal Cities.
 			{
 				"name": "Patronage",
 				"effect": "Cost of purchasing culture buildings reduced by 50%",
@@ -282,6 +289,7 @@
 				"requires": ["Mercantilism"],
 				"row": 2,
 				"column": 5
+				// not in vanilla
 			},
 			{
 				"name": "Protectionism",
@@ -293,16 +301,17 @@
 			},
 			{
 				"name": "Commerce Complete",
-				"effect": "+1 gold from every trading post, double gold from Great Merchant trade missions",
-				"uniques": ["[+1 Gold] from every [Trading post]", "Double gold from Great Merchant trade missions"]
+				"effect": "+1 gold from every specialist",
+				"uniques": ["[+1 Gold] from every specialist"]
 			}
 		]
 	},
 	{
 		"name": "Rationalism",
 		"era": "Renaissance era",
-		"effect": "Production to science conversion in cities increased by 33%",
-		"uniques": ["Production to science conversion in cities increased by 33%"],
+		"effect": "Science gained from research agreements +50%",
+		"uniques": ["Science gained from research agreements +50%"],
+		// This branch cannot be active at the same time as Piety.
 		"policies": [
 			{
 				"name": "Secularism",
@@ -322,7 +331,7 @@
 			{
 				"name": "Free Thought",
 				"effect": "+1 science from every trading post, +17% science from universities",
-				"uniques": ["[+1 Gold] from every [Trading post]", "+[17]% [Science] from every [University]"],
+				"uniques": ["[+1 Science] from every [Trading post]", "+[17]% [Science] from every [University]"],
 				"requires": ["Secularism"],
 				"row": 2,
 				"column": 1
@@ -337,8 +346,8 @@
 			},
 			{
 				"name": "Scientific Revolution",
-				"effect": "Science gained from research agreements +50%",
-				"uniques": ["Science gained from research agreements +50%"],
+				"effect": "2 Free Technologies",
+				"uniques": ["Free Technology","Free Technology"],
 				"requires": ["Free Thought"],
 				"row": 3,
 				"column": 1
@@ -354,6 +363,7 @@
 		"name": "Order",
 		"era": "Industrial era",
 		"effect": "+1 Happiness per City",
+		// This branch cannot be active at the same time as Freedom or Autocracy.
 		"policies": [
 			{
 				"name": "Nationalism",
@@ -398,6 +408,7 @@
 		"era": "Renaissance era",
 		"effect": "+25% great people rate",
 		"uniques": ["+[25]% great person generation in all cities"],
+		// This branch cannot be active at the same time as Autocracy or Order.
 		"policies": [
 			{
 				"name": "Constitution",
@@ -412,6 +423,7 @@
 				"uniques": ["[+1 Production] per [5] population in all cities"],
 				"row": 1,
 				"column": 3
+				// Combat Strength of Cities increased by 33%
 			},
 			{
 				"name": "Civil Society",
@@ -427,6 +439,7 @@
 				"requires": ["Constitution"],
 				"row": 2,
 				"column": 1
+				// 8 units are maintenance free.
 			},
 			{
 				"name": "Democracy",
@@ -448,6 +461,7 @@
 		"era": "Industrial era",
 		"effect": "-33% unit upkeep costs",
 		"uniques": ["-33% unit upkeep costs"],
+		// This branch cannot be active at the same time as Freedom or Order.
 		"policies": [
 			{
 				"name": "Populism",

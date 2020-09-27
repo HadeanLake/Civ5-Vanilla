@@ -9,7 +9,7 @@
 		"culture": 1,
 		"cityStrength": 2,
 		"cost": 1,
-		"uniques": ["Indicates the capital city"]
+		"uniques": ["Indicates the capital city","Quantity of strategic resources produced by the empire increased by 100%",]
 		// "cityStrength" should be 2.5
 		// 1 great art work slot in BNW
 	},
