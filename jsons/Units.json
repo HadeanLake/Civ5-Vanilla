@@ -952,7 +952,6 @@
 		"unitType": "WaterAircraftCarrier",
 		"movement": 5,
 		"strength": 30,
-		"rangedStrength": 30,
 		"cost": 375,
 		"requiredTech": "Flight",
 		"uniques": ["Can carry 2 aircraft"]
@@ -1084,7 +1083,7 @@
 		"requiredTech": "Flight",
 		"requiredResource": "Oil",
 		"upgradesTo": "Jet Fighter",
-		"uniques": ["[100]% chance to intercept air attacks",
+		"uniques": ["[100]% chance to intercept air attacks", "+[100]% Strength vs [Helicopter Gunship]",
 			"6 tiles in every direction always visible"],
 		"attackSound": "shot"
 		// 50% penalty when attacking (not intercepting) units in vanilla
@@ -1103,7 +1102,7 @@
 		"cost": 375,
 		"requiredTech": "Flight",
 		"upgradesTo": "Jet Fighter",
-		"uniques": ["[100]% chance to intercept air attacks", "Bonus vs Fighter 50%",
+		"uniques": ["[100]% chance to intercept air attacks", "Bonus vs Fighter 50%", "+[100]% Strength vs [Helicopter Gunship]",
 			"6 tiles in every direction always visible"],
 		"attackSound": "shot"
 		// 50% penalty when attacking (not intercepting) units in vanilla
@@ -1123,9 +1122,9 @@
 		"requiredTech": "Radar",
 		"requiredResource": "Oil",
 		"upgradesTo": "Stealth Bomber",
-		"uniques": ["Penalty vs Naval 50%"],
+		"uniques": ["Penalty vs water units 50%"],
 		"attackSound": "shot"
-		// 65 rangedStrength, no Penalty vs Naval in expansions
+		// 65 rangedStrength, no Penalty vs water units in expansions
 	},
 	{
 		"name": "B17",
@@ -1141,9 +1140,9 @@
 		"requiredResource": "Oil",
 		"promotions": ["Evasion", "Siege I"],
 		"upgradesTo": "Stealth Bomber",
-		"uniques": ["Penalty vs Naval 50%"],
+		"uniques": ["Penalty vs water units 50%"],
 		"attackSound": "shot"
-		// 70 rangedStrength, no Penalty vs Naval in expansions
+		// 70 rangedStrength, no Penalty vs water units in expansions
 	},
 	/*
 	{
@@ -1319,7 +1318,7 @@
 		"cost": 375,
 		"requiredTech": "Radio",
 		"upgradesTo": "Mobile SAM",
-		"uniques": ["[100]% chance to intercept air attacks","Bonus vs air units 100%"],
+		"uniques": ["[100]% chance to intercept air attacks","Bonus vs air units 100%", "+[100]% Strength vs [Helicopter Gunship]"],
 		"attackSound": "machinegun"
 		// 50 strength, requiredTech "Ballistics", Bonus vs air units 150% in expansions
 	},
@@ -1406,7 +1405,7 @@
 		"strength": 40,
 		"cost": 425,
 		"requiredTech": "Computers",
-		"uniques": ["[100]% chance to intercept air attacks", "Bonus vs air units 100%"],
+		"uniques": ["[100]% chance to intercept air attacks", "Bonus vs air units 100%", "+[100]% Strength vs [Helicopter Gunship]"],
 		"attackSound": "shot"
 		// 65 strength, 3 movement, requiredTech "Rocketry", Bonus vs air units 150% in expansions
 	},
@@ -1421,7 +1420,7 @@
 		"cost": 425,
 		"requiredTech": "Lasers",
 		"requiredResource": "Aluminum",
-		"uniques": ["[100]% chance to intercept air attacks",
+		"uniques": ["[100]% chance to intercept air attacks", "+[100]% Strength vs [Helicopter Gunship]",
 			"6 tiles in every direction always visible"]
 		"attackSound": "shot"
 		// Bonus vs helicopter 100% and 50% penalty when attacking (not intercepting) units in vanilla
@@ -1438,10 +1437,10 @@
 		"requiredTech": "Stealth",
 		"requiredResource": "Aluminum",
 		"uniques": ["Evasion", "6 tiles in every direction always visible",
-			"Penalty vs Naval 50%"]
+			"Penalty vs water units 50%"]
 		"attackSound": "shot"
 		// cannot be based on carrier
-		// 85 rangedStrength, no Penalty vs Naval in expansions
+		// 85 rangedStrength, no Penalty vs water units in expansions
 	},
 	{
 		// "Hovering unit" unique gives ability to get into impassable tiles - and only that (no vision bonus or flying over ocean)
@@ -1484,8 +1483,10 @@
 		"cost": 425,
 		"requiredTech": "Computers",
 		"requiredResource": "Aluminum",
-		"uniques": ["Bonus as Attacker [75]%", "Invisible to others", "Can only attack water", "Can attack submarines", "Can enter ice tiles","+1 Visibility Range"]
+		"uniques": ["Invisible to others", "Can only attack water", "Can attack submarines",
+                "Can enter ice tiles", "+1 Visibility Range", "Bonus vs WaterSubmarine 50%"]
 		// Can carry 2 Missiles
+		// Bonus as Attacker [100]% in G&K, Bonus as Attacker [75]% in BNW
 		// 50 strength, 85 rangedStrength, requiredTech "Telecommunications", does not require aluminum in expansions
 	},
 	
